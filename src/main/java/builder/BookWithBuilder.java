@@ -2,14 +2,14 @@ package builder;
 
 import java.time.Year;
 
-public class Book2 {
+public class BookWithBuilder {
     private final String isbn;
     private final String title;
     private final String genre;
     private final String author;
     private final Year published;
     private final String description;
-    private Book2(Builder builder) {
+    private BookWithBuilder(Builder builder) {
         this.isbn = builder.isbn;
         this.title = builder.title;
         this.genre = builder.genre;
@@ -75,8 +75,8 @@ public class Book2 {
             return this;
         }
 
-        public Book2 build() {
-            return new Book2(this);
+        public BookWithBuilder build() {
+            return new BookWithBuilder(this);
         }
 
     }

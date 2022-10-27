@@ -4,11 +4,11 @@ import java.time.Year;
 
 public class MainBuilder {
     public static void main(String args[]) {
-        Book book1= new Book("0-12-345678-9", "Moby-Dick", "Herman Melville");
-
-        Book2 book = new Book2.Builder("0-12-345678-9", "Moby-Dick")
+//        Book book1= new Book("0-12-345678-9", "Moby-Dick", "Herman Melville");
+//        Book book1= new Book("Moby-Dick", "0-12-345678-9", "Herman Melville");
+        BookWithBuilder book = new BookWithBuilder.Builder("0-12-345678-9", "Moby-Dick")
                 .genre("ADVENTURE_FICTION")
-                .author("Herman Melville")
+
                 .published(Year.of(1851))
                 .description(
                         "The book is the sailor Ishmael's narrative of the obsessive quest of "
